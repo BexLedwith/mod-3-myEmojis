@@ -12,6 +12,23 @@ const emojisArr = [];
 const emojiContainer = document.querySelector(".emojiContainer");
 const emojiInput = document.getElementById("input");
 
+const bodyContainer = document.querySelector("body");
+
+//set background to first image
+
+const bgImages = [
+  "blue-swirls.jpg",
+  "desert.jpg",
+  "ir-leaves.jpg",
+  "sunset-water.jpg",
+  "vw-purple.jpg",
+  "yellow-splash.jpg",
+];
+
+function renderBg(img) {
+  bodyContainer.style.backgroundImage = `url(/images/${img})`;
+}
+
 // render emojis from emojisArr
 function renderEmojis() {
   emojiContainer.innerHTML = ""; // clear previous emojis
@@ -22,6 +39,8 @@ function renderEmojis() {
 }
 
 renderEmojis();
+let currentImage = 0;
+renderBg(bgImages[currentImage]);
 
 // add event listeners
 pushBtn.addEventListener("click", function () {
@@ -46,4 +65,14 @@ shiftBtn.addEventListener("click", function () {
 popBtn.addEventListener("click", function () {
   emojisArr.pop();
   renderEmojis();
+});
+
+backBtn.addEventListener("click", function () {
+  currentImage === 0 ? (currentImage = bgImages.length - 1) : currentImage--;
+  renderBg(bgImages[currentImage]);
+});
+
+nextBtn.addEventListener("click", function () {
+  currentImage === bgImages.length - 1 ? (currentImage = 0) : currentImage++;
+  renderBg(bgImages[currentImage]);
 });

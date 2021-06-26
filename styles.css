@@ -12,12 +12,17 @@ html {
 body {
   text-align: center;
   font-family: "Lato", "Roboto", sans-serif;
-  background: burlywood;
   padding: 2px;
+  background-position: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 h1 {
   font-family: "Titillium Web", sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 button {
@@ -27,6 +32,12 @@ button {
   padding: 1rem;
   min-width: 11.25rem;
   cursor: pointer;
+}
+
+p {
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: black;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .container {
@@ -54,6 +65,7 @@ button {
 
 .bg-slider-container {
   margin-top: 6rem;
+  width: 100%;
 }
 
 .emojiContainer {
