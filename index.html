@@ -17,31 +17,29 @@
   <body>
     <header>
       <h1>Bexley's Emoji App!</h1>
-      <p class="subhead">
-        Use this app to find emojis to express yourself! <br />You can also use
-        the slider at the bottom of the page to change the site background!
-      </p>
+      <p class="subhead">Use this app to find emojis to express yourself!</p>
     </header>
     <main class="container">
+      <div class="emojiContainer"></div>
+
       <input
         type="text"
         id="input"
         placeholder="start typing to search for an emoji! 👯"
       />
-      <div class="emojiContainer"></div>
+
       <div class="container add-btns">
-        <button class="add-btn" id="shift-btn">Add to beginning</button>
+        <button class="add-btn" id="unshift-btn">Add to beginning</button>
         <button class="add-btn" id="push-btn">Add to end</button>
       </div>
       <div class="container remove-btns">
-        <button class="remove-btn" id="unshift-btn">
-          Remove from beginning
-        </button>
+        <button class="remove-btn" id="shift-btn">Remove from beginning</button>
         <button class="remove-btn" id="pop-btn">Remove from end</button>
       </div>
       <div class="container bg-slider-container">
-        <button class="bg-slider back-btn">Back</button>
-        <button class="bg-slider next-btn">Next</button>
+        <p>Use the buttons below to change the background!</p>
+        <button class="bg-slider" id="back-btn">Back</button>
+        <button class="bg-slider" id="next-btn">Next</button>
       </div>
     </main>
     <footer></footer>

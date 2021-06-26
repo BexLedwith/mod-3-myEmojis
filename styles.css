@@ -26,6 +26,7 @@ button {
   margin: 0 2px;
   padding: 1rem;
   min-width: 11.25rem;
+  cursor: pointer;
 }
 
 .container {
@@ -55,11 +56,12 @@ button {
   margin-top: 6rem;
 }
 
-.emoji-container {
+.emojiContainer {
   min-height: 2rem;
-  margin-top: 2rem;
+  margin: 2rem;
 }
 
 #input {
   min-width: 18.75em;
+  min-height: 2em;
 }
