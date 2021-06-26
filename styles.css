@@ -29,6 +29,9 @@ h1 {
   border-radius: 3px;
   border: none;
   margin: 0 2px;
+  padding: 1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .add-btn {
@@ -37,6 +40,9 @@ h1 {
 
 .remove-btn {
   margin: 0 15%;
+  background: crimson;
+  color: #fff;
+  font-weight: bold;
 }
 
 #input {
