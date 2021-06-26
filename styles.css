@@ -1,1 +1,18 @@
+*,
+*::after,
+*:before {
+  box-sizing: border-box;
+}
 
+body {
+  text-align: center;
+  font-family: "Lato", "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Titillium Web", sans-serif;
+}
+
+#input {
+  min-width: 18.75em;
+}
