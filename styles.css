@@ -20,16 +20,20 @@ h1 {
   font-family: "Titillium Web", sans-serif;
 }
 
+button {
+  border-radius: 3px;
+  border: none;
+  margin: 0 2px;
+  padding: 1rem;
+  min-width: 11.25rem;
+}
+
 .container {
   margin: 0.8rem;
 }
 
 .add-btn,
 .remove-btn {
-  border-radius: 3px;
-  border: none;
-  margin: 0 2px;
-  padding: 1rem;
   font-size: 0.8rem;
   font-weight: bold;
 }
@@ -39,10 +43,21 @@ h1 {
 }
 
 .remove-btn {
-  margin: 0 15%;
   background: crimson;
   color: #fff;
-  font-weight: bold;
+}
+
+.subhead {
+  padding: 4px;
+}
+
+.bg-slider-container {
+  margin-top: 6rem;
+}
+
+.emoji-container {
+  min-height: 2rem;
+  margin-top: 2rem;
 }
 
 #input {
