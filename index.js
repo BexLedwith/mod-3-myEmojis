@@ -26,7 +26,7 @@ const bgImages = [
 ];
 
 function renderBg(img) {
-  bodyContainer.style.backgroundImage = `url(/images/${img})`;
+  bodyContainer.style.backgroundImage = `url(./images/${img})`;
 }
 
 // render emojis from emojisArr
