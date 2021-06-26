@@ -4,13 +4,39 @@
   box-sizing: border-box;
 }
 
+html {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 body {
   text-align: center;
   font-family: "Lato", "Roboto", sans-serif;
+  background: burlywood;
+  padding: 2px;
 }
 
 h1 {
   font-family: "Titillium Web", sans-serif;
+}
+
+.container {
+  margin: 0.8rem;
+}
+
+.add-btn,
+.remove-btn {
+  border-radius: 3px;
+  border: none;
+  margin: 0 2px;
+}
+
+.add-btn {
+  background: chartreuse;
+}
+
+.remove-btn {
+  margin: 0 15%;
 }
 
 #input {
