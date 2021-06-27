@@ -12,7 +12,7 @@ const emojisArr = [];
 const emojiContainer = document.querySelector(".emojiContainer");
 const emojiInput = document.getElementById("input");
 
-const bodyContainer = document.querySelector("body");
+const bgContainer = document.querySelector(".bgContainer");
 
 //set background to first image
 
@@ -26,7 +26,7 @@ const bgImages = [
 ];
 
 function renderBg(img) {
-  bodyContainer.style.backgroundImage = `url(./images/${img})`;
+  bgContainer.style.backgroundImage = `url(./images/${img})`;
 }
 
 // render emojis from emojisArr
