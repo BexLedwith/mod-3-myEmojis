@@ -34,6 +34,7 @@ button {
   padding: 1rem;
   min-width: 11.25rem;
   cursor: pointer;
+  font-weight: bold;
 }
 
 p {
@@ -72,7 +73,6 @@ a:hover {
 .add-btn,
 .remove-btn {
   font-size: 0.8rem;
-  font-weight: bold;
 }
 
 .add-btn {
