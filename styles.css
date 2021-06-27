@@ -31,10 +31,16 @@ button {
   border-radius: 3px;
   border: none;
   margin: 2px 2px;
-  padding: 1rem;
-  min-width: 11.25rem;
+  padding: 10px 30px;
   cursor: pointer;
   font-weight: bold;
+  transition: transform 0.2s;
+}
+
+button:hover,
+button:focus {
+  opacity: 0.75;
+  transform: scale(1.125);
 }
 
 p {
@@ -51,7 +57,8 @@ a::after {
   transition: transform 0.2s;
 }
 
-a:hover {
+a:hover,
+a:focus {
   font-size: 1.8rem;
 }
 
